@@ -5,14 +5,22 @@ public class Urlaub
     private int preis;
     private boolean allInclusive;
     
+    public Urlaub(String ort, int preis, boolean allInclusive)
+    {
+        setOrt(ort);
+        setPreis(preis);
+        setAllInclusive(allInclusive);
+    }
+    
+    
     public void setOrt(String ort)
     {
-        this.ort= ort;
+        this.ort = ort;
     }
     
     public void setPreis(int preis)
     {
-        this.preis= preis;
+        this.preis = preis;
         
     }
     
@@ -37,6 +45,10 @@ public class Urlaub
         return allInclusive;
     }
     
+    public void printUrlaub()
+    {
+        System.out.println(ort + " - " + preis + " EUR - AllInclusive: " + allInclusive);
+    }
     
     
     
